@@ -26,3 +26,8 @@ acc=linear.score(x_test,y_test)
 print(acc)
 
 predictions=linear.predict(x_test)
+
+for x in range(len(predictions)):
+  print(predictions[x],x_test[x],y_test[x])
+  
+  
