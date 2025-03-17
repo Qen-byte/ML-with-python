@@ -24,3 +24,5 @@ linear=linear_model.LinearRegression()
 linear.fit(x_train,y_train)
 acc=linear.score(x_test,y_test)
 print(acc)
+
+predictions=linear.predict(x_test)
