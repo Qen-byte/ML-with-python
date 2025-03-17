@@ -14,3 +14,6 @@ data = data[["G1","G2", "G3","studytime","failures","absences"]]
 
 #print(data.head())
 predict="G3"
+
+x=np.array(data.drop([predict],axis=1))
+y=np.array(data[predict])
