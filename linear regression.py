@@ -8,3 +8,9 @@ data=pd.read_csv("student-mat.csv", sep=";")
 
 #print(data.head())
 #print("Columns in dataset:", data.columns.tolist())
+
+
+data = data[["G1","G2", "G3","studytime","failures","absences"]]
+
+#print(data.head())
+predict="G3"
