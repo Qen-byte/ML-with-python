@@ -18,3 +18,5 @@ lug_boot=le.fit_transform(list(data["lug_boot"]))
 safety=le.fit_transform(list(data["safety"]))
 clas=le.fit_transform(list(data["class"]))
 
+predict="class"
+
