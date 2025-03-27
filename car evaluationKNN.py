@@ -9,3 +9,5 @@ from sklearn import linear_model, preprocessing
 data=pd.read_csv("car.data")
 print(data)
 le=preprocessing.LabelEncoder()
+
+buying=le.fit_transform(list(data["buying"]))
