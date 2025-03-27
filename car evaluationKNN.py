@@ -12,3 +12,4 @@ le=preprocessing.LabelEncoder()
 
 buying=le.fit_transform(list(data["buying"]))
 maint=le.fit_transform(list(data["maint"]))
+door=le.fit_transform(list(data["door"]))
