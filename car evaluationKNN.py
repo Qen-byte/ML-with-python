@@ -11,3 +11,4 @@ print(data)
 le=preprocessing.LabelEncoder()
 
 buying=le.fit_transform(list(data["buying"]))
+maint=le.fit_transform(list(data["maint"]))
