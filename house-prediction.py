@@ -12,5 +12,8 @@ from sklearn.metrics import mean_squared_error, r2_score
 
 # Load the dataset
 df = pd.read_csv('Housing.csv')
+print("Dataset Info:")
+print(df.info())
+
 
 
