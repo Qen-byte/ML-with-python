@@ -14,6 +14,11 @@ from sklearn.metrics import mean_squared_error, r2_score
 df = pd.read_csv('Housing.csv')
 print("Dataset Info:")
 print(df.info())
+print("Dataset Info:")
+print(df.info())
+print("\nFirst 5 rows:")
+print(df.head())
+
 
 
 
