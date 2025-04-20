@@ -26,6 +26,12 @@ df['date'] = pd.to_datetime(df['date'])
 df['date'] = pd.to_datetime(df['date'])
 df['sale_year'] = df['date'].dt.year
 df['sale_month'] = df['date'].dt.month
+# Drop columns not useful for prediction
+df = df.drop(['id', 'date'], axis=1)
+
+# Check for missing values
+print("Missing Values:")
+
 
 
 
