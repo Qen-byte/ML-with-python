@@ -21,6 +21,12 @@ print(df.head())
 #DATA PREPROCCESSING
 # Convert 'date' to datetime and extract year/month
 df['date'] = pd.to_datetime(df['date'])
+#DATA PREPROCCESSING
+# Convert 'date' to datetime and extract year/month
+df['date'] = pd.to_datetime(df['date'])
+df['sale_year'] = df['date'].dt.year
+df['sale_month'] = df['date'].dt.month
+
 
 
 
