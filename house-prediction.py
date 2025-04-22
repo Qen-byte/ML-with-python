@@ -46,6 +46,7 @@ print("Summary Statistics:")
 print(df.describe())
 
 plt.figure(figsize=(12, 8))
+sns.heatmap(df.corr(), annot=False, cmap='coolwarm')
 
 
 
