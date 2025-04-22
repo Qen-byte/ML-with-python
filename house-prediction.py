@@ -39,6 +39,8 @@ df = df[df['price'] <= price_cap]
 df['sqft_check'] = df['sqft_living'] - (df['sqft_above'] + df['sqft_basement'])
 print("Rows where sqft_living != sqft_above + sqft_basement:", (df['sqft_check'] != 0).sum())
 
+df = df.drop('sqft_check', axis=1)  # Drop temporary column
+
 
 
 
