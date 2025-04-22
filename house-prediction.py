@@ -41,6 +41,8 @@ print("Rows where sqft_living != sqft_above + sqft_basement:", (df['sqft_check']
 
 df = df.drop('sqft_check', axis=1)  # Drop temporary column
 
+df = pd.get_dummies(df, columns=['zipcode'], drop_first=True)
+
 
 
 
