@@ -33,7 +33,8 @@ df = df.drop(['id', 'date'], axis=1)
 print("Missing Values:")
 print(df.isnull().sum())
 
-
+price_cap = df['price'].quantile(0.99)  # Cap at 99th percentile
+df = df[df['price'] <= price_cap]
 
 
 
