@@ -45,6 +45,8 @@ df = pd.get_dummies(df, columns=['zipcode'], drop_first=True)
 print("Summary Statistics:")
 print(df.describe())
 
+plt.figure(figsize=(12, 8))
+
 
 
 
