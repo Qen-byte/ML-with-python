@@ -31,6 +31,7 @@ df = df.drop(['id', 'date'], axis=1)
 
 # Check for missing values
 print("Missing Values:")
+print(df.isnull().sum())
 
 
 
