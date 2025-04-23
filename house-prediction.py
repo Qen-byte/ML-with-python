@@ -54,6 +54,9 @@ plt.show()
 # Create age of house
 df['house_age'] = 2025 - df['yr_built']
 
+# Binary renovation feature
+df['renovated'] = df['yr_renovated'].apply(lambda x: 1 if x > 0 else 0)
+
 
 
 
