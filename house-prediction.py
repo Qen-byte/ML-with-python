@@ -69,5 +69,9 @@ df = df.drop('yr_renovated', axis=1)
 X = df.drop(['price', 'price_per_sqft'], axis=1)  # Exclude price and derived feature
 y = df['price']
 
+# Split data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+
 
 
