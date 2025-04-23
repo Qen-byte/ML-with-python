@@ -66,5 +66,8 @@ df['price_per_sqft'] = df['price'] / df['sqft_living']
 df = df.drop('yr_renovated', axis=1)
 
 
+X = df.drop(['price', 'price_per_sqft'], axis=1)  # Exclude price and derived feature
+y = df['price']
+
 
 
