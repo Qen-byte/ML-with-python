@@ -62,5 +62,9 @@ df['price_per_sqft'] = df['price'] / df['sqft_living']
 
 
 
+# Drop yr_renovated (replaced by renovated)
+df = df.drop('yr_renovated', axis=1)
+
+
 
 
