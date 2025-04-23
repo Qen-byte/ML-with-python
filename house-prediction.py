@@ -50,6 +50,10 @@ sns.heatmap(df.corr(), annot=False, cmap='coolwarm')
 plt.title('Correlation Matrix')
 plt.show()
 
+#FEATURE ENGINEERING
+# Create age of house
+df['house_age'] = 2025 - df['yr_built']
+
 
 
 
