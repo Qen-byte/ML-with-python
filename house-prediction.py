@@ -57,6 +57,9 @@ df['house_age'] = 2025 - df['yr_built']
 # Binary renovation feature
 df['renovated'] = df['yr_renovated'].apply(lambda x: 1 if x > 0 else 0)
 
+# Price per square foot
+df['price_per_sqft'] = df['price'] / df['sqft_living']
+
 
 
 
