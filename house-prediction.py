@@ -93,5 +93,6 @@ y_pred_rf = rf_model.predict(X_test)
 
 # Evaluate models
 def evaluate_model(y_true, y_pred, model_name):
+  rmse = np.sqrt(mean_squared_error(y_true, y_pred))
 
 
