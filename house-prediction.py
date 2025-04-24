@@ -98,5 +98,6 @@ def evaluate_model(y_true, y_pred, model_name):
   print(f"{model_name} Performance:")
   print(f"RMSE: ${rmse:,.2f}")
   print(f"R²: {r2:.4f}\n")
+  evaluate_model(y_test, y_pred_lr, "Linear Regression")
 
 
