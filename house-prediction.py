@@ -82,7 +82,7 @@ X_test_scaled = scaler.transform(X_test)
 
 #TRAINING
 # Linear Regression
-lr_model = LinearRegression()
+#lr_model = LinearRegression()
 lr_model.fit(X_train_scaled, y_train)
 y_pred_lr = lr_model.predict(X_test_scaled)
 
