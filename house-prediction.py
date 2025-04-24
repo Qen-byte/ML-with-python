@@ -86,4 +86,12 @@ lr_model = LinearRegression()
 lr_model.fit(X_train_scaled, y_train)
 y_pred_lr = lr_model.predict(X_test_scaled)
 
+# Random Forest
+rf_model = RandomForestRegressor(n_estimators=100, random_state=42)
+rf_model.fit(X_train, y_train)  # Random Forest doesn't need scaling
+y_pred_rf = rf_model.predict(X_test)
+
+# Evaluate models
+def evaluate_model(y_true, y_pred, model_name):
+
 
