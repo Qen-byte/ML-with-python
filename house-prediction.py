@@ -108,4 +108,5 @@ feature_importance_df = feature_importance_df.sort_values(by='Importance', ascen
 # Plot feature importance
 plt.figure(figsize=(10, 6))
 sns.barplot(x='Importance', y='Feature', data=feature_importance_df.head(10))
+plt.title('Top 10 Feature Importances (Random Forest)')
 
