@@ -100,5 +100,10 @@ def evaluate_model(y_true, y_pred, model_name):
   print(f"R²: {r2:.4f}\n")
   #evaluate_model(y_test, y_pred_lr, "Linear Regression")
   evaluate_model(y_test, y_pred_rf, "Random Forest")
+# Feature importance from Random Forest
+importances = rf_model.feature_importances_
+feature_names = X.columns
+feature_importance_df = pd.DataFrame({'Feature': feature_names, 'Importance': importances})
+feature_importance_df = feature_importance_df.sort_values(by='Importance', ascending=False)
 
 
