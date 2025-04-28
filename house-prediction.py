@@ -118,5 +118,5 @@ Modify as needed, e.g.:
 new_house['sqft_living'] = 2000
 new_house['bedrooms'] = 3
  new_house['bathrooms'] = 2.5
-# new_house['grade'] = 8
+new_house['grade'] = 8
 # ... set other features, including zipcode dummies
