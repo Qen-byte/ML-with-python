@@ -107,5 +107,5 @@ feature_importance_df = pd.DataFrame({'Feature': feature_names, 'Importance': im
 feature_importance_df = feature_importance_df.sort_values(by='Importance', ascending=False)
 # Plot feature importance
 plt.figure(figsize=(10, 6))
-
+sns.barplot(x='Importance', y='Feature', data=feature_importance_df.head(10))
 
