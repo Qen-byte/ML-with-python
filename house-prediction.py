@@ -114,7 +114,7 @@ plt.show()
 
 # Example new house (adjust values based on dataset ranges)
 new_house = X_train.iloc[0:1].copy()  # Use a sample row as template
-# Modify as needed, e.g.:
+Modify as needed, e.g.:
 # new_house['sqft_living'] = 2000
 # new_house['bedrooms'] = 3
 # new_house['bathrooms'] = 2.5
